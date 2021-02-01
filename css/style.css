@@ -1,0 +1,46 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+	font: 16px/1.63 'Arial', sans-serif;
+	color: #d1c4c4;
+	background-color: black;
+    margin: 0;
+}
+
+.container {
+	max-width: 676px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 15px;
+}
+
+#start, #stop {
+    padding: 6px 20px;
+    border: none;
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #d1c4c4;
+    transition: .3s background-color;
+}
+
+#start:hover {
+    background-color: #7ca500;
+}
+
+#stop:hover {
+    background-color: #cc1104;
+}
+
+#canvas {        
+    background: black;
+    border: solid 3px #d1c4c4;
+    border-radius: 2px;
+}
