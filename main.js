@@ -33,7 +33,7 @@ function getRandomColor() {
 
 function createGameArea() {
 	let x = Math.random() * 620;
-	let speed = Math.random() * 0.3 + 0.3;
+	let speed = Math.random() * 0.5 + 0.3;
 	let color = getRandomColor();
 	let gameSquare = new Square(x, -20, 20, 20, speed, color);
 
@@ -58,7 +58,7 @@ let btnStop = document.querySelector('#stop');
 
 btnStart.addEventListener('click', () => {
 	if (arrOfSquares.length === 0) {
-		let randomTimeInterval = Math.random() * 1200;
+		let randomTimeInterval = Math.random() * 1200 + 200;
 		infinitySqueres = setInterval(createGameArea, randomTimeInterval);
 		score = 0;
 	}
